@@ -25,8 +25,8 @@
 # if selected == "Contact":
 #     st.title(f"Welcome to the {selected} page.")
 
-    import streamlit as st
-    import pandas as pd
+import streamlit as st
+import pandas as pd
     # import os
     
     # # Get the current working directory
