@@ -40,3 +40,11 @@ df = pd.read_csv(file_path, delimiter=';')
 # Display the DataFrame in an interactive table
 st.write("Wine Quality Data")
 st.dataframe(df)
+
+
+data = {
+    'Product': ['A', 'B', 'C'],
+    'Sales': [1200, 850, 950],
+    'Customers': [300, 400, 350]
+}
+df = pd.DataFrame(data)
