@@ -25,8 +25,8 @@
 # if selected == "Contact":
 #     st.title(f"Welcome to the {selected} page.")
 
-import streamlit as st
-import pandas as pd
+    # import streamlit as st
+    # import pandas as pd
     # import os
     
     # # Get the current working directory
@@ -42,9 +42,19 @@ import pandas as pd
     # st.dataframe(df)
 
 
-data = {
-    'Product': ['A', 'B', 'C'],
-    'Sales': [1200, 850, 950],
-    'Customers': [300, 400, 350]
-}
+import pandas as pd
+import streamlit as st
+
+# Sample data
+data = {'Product': ['A', 'B', 'C'], 
+        'Sales': [1200, 850, 950], 
+        'Customers': [300, 400, 350]}
 df = pd.DataFrame(data)
+
+# Show data with Streamlit elements
+st.dataframe(df)                # Interactive table
+st.data_editor(df)              # Editable table
+st.table(df)                    # Static table
+
+# Customize columns directly in the dataframe display
+st.dataframe(df.style.format({'Sales': '${:,.0f}', 'Customers': '{:,.0f}'}))
