@@ -1,29 +1,29 @@
 
-# import streamlit as st
-# from streamlit_option_menu import option_menu
+import streamlit as st
+from streamlit_option_menu import option_menu
 
-# st.title('Hello, Students!')
-# st.write('This is your Python Programming course.')
+st.title('Hello, Students!')
+st.write('This is your Python Programming course.')
 
-# with st.sidebar:
-#     selected=option_menu(
-#         menu_title = "Menu",
-#         options = ["Home", "About", "Contact"],
-#         icons = ["house",
-#                  "2-circle-fill",
-#                  "3-circle-fill"],
-#         menu_icon= "emoji-smile-fill",
-#         default_index=0,
-#     )
+with st.sidebar:
+    selected=option_menu(
+        menu_title = "Menu",
+        options = ["Home", "About", "Contact"],
+        icons = ["house",
+                 "2-circle-fill",
+                 "3-circle-fill"],
+        menu_icon= "emoji-smile-fill",
+        default_index=0,
+    )
 
-# if selected == "Home":
-#     st.title(f"Welcome to the {selected} page.")
+if selected == "Home":
+    st.title(f"Welcome to the {selected} page.")
 
-# if selected == "About":
-#     st.title(f"Welcome to the {selected} page.")
+if selected == "About":
+    st.title(f"Welcome to the {selected} page.")
 
-# if selected == "Contact":
-#     st.title(f"Welcome to the {selected} page.")
+if selected == "Contact":
+    st.title(f"Welcome to the {selected} page.")
 
     # import streamlit as st
     # import pandas as pd
@@ -42,19 +42,19 @@
     # st.dataframe(df)
 
 
-import pandas as pd
-import streamlit as st
+# import pandas as pd
+# import streamlit as st
 
-# Sample data
-data = {'Product': ['A', 'B', 'C'], 
-        'Sales': [1200, 850, 950], 
-        'Customers': [300, 400, 350]}
-df = pd.DataFrame(data)
+# # Sample data
+# data = {'Product': ['A', 'B', 'C'], 
+#         'Sales': [1200, 850, 950], 
+#         'Customers': [300, 400, 350]}
+# df = pd.DataFrame(data)
 
-# Show data with Streamlit elements
-st.dataframe(df)                # Interactive table
-st.data_editor(df)              # Editable table
-st.table(df)                    # Static table
+# # Show data with Streamlit elements
+# st.dataframe(df)                # Interactive table
+# st.data_editor(df)              # Editable table
+# st.table(df)                    # Static table
 
-# Customize columns directly in the dataframe display
-st.dataframe(df.style.format({'Sales': '${:,.0f}', 'Customers': '{:,.0f}'}))
+# # Customize columns directly in the dataframe display
+# st.dataframe(df.style.format({'Sales': '${:,.0f}', 'Customers': '{:,.0f}'}))
