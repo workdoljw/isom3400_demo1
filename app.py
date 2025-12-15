@@ -4,6 +4,7 @@ from streamlit_option_menu import option_menu
 
 st.title('Hello, Students!')
 st.write('This is your Python Programming course.')
+st.header("this is HEADER")
 
 with st.sidebar:
     selected=option_menu(
