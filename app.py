@@ -48,7 +48,7 @@ st.title("Multiselect Demo")
 
 # Basic multiselect with defaults
 selected_colors = st.multiselect(
-    label="Choose your favorite colors",
+    "Choose your favorite colors",
     options=["Red", "Green", "Blue", "Yellow", "Purple", "Orange"],
     default=["Green", "Blue"],
     max_selections=3,
