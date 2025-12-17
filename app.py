@@ -44,7 +44,24 @@ df = pd.read_csv(file_path, delimiter=';')
 st.write("Wine Quality Data")
 st.dataframe(df)
 
+st.title("Multiselect Demo")
 
+# Basic multiselect with defaults
+selected_colors = st.multiselect(
+    label="Choose your favorite colors",
+    options=["Red", "Green", "Blue", "Yellow", "Purple", "Orange"],
+    default=["Green", "Blue"],
+    max_selections=3,
+    placeholder="Pick up to 3 colors"
+)
+
+# Display result
+st.write("You selected:", selected_colors)
+
+if selected_colors:
+    st.success(f"Your favorites: {', '.join(selected_colors)}")
+else:
+    st.info("No colors selected yet.")
 # import pandas as pd
 # import streamlit as st
 
