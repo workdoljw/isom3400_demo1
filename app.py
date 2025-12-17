@@ -1,48 +1,48 @@
 
-import streamlit as st
-from streamlit_option_menu import option_menu
+# import streamlit as st
+# from streamlit_option_menu import option_menu
 
-st.title('Hello, Students!')
-st.write('This is your Python Programming course.')
-st.header("this is HEADER")
-st.subheader("this is SUBHEADER")
+# st.title('Hello, Students!')
+# st.write('This is your Python Programming course.')
+# st.header("this is HEADER")
+# st.subheader("this is SUBHEADER")
 
 
-with st.sidebar:
-    selected=option_menu(
-        menu_title = "Menu",
-        options = ["Home", "About", "Contact"],
-        icons = ["house",
-                 "2-circle-fill",
-                 "3-circle-fill"],
-        menu_icon= "emoji-smile-fill",
-        default_index=0,
-    )
+# with st.sidebar:
+#     selected=option_menu(
+#         menu_title = "Menu",
+#         options = ["Home", "About", "Contact"],
+#         icons = ["house",
+#                  "2-circle-fill",
+#                  "3-circle-fill"],
+#         menu_icon= "emoji-smile-fill",
+#         default_index=0,
+#     )
 
-if selected == "Home":
-    st.title(f"Welcome to the {selected} page.")
+# if selected == "Home":
+#     st.title(f"Welcome to the {selected} page.")
 
-if selected == "About":
-    st.title(f"Welcome to the {selected} page.")
+# if selected == "About":
+#     st.title(f"Welcome to the {selected} page.")
 
-if selected == "Contact":
-    st.title(f"Welcome to the {selected} page.")
+# if selected == "Contact":
+#     st.title(f"Welcome to the {selected} page.")
 
-    # import streamlit as st
-    # import pandas as pd
-    # import os
+    import streamlit as st
+    import pandas as pd
+    import os
     
-    # # Get the current working directory
-    # current_directory = os.getcwd()
-    # # Define the file path
-    # file_path = os.path.join(current_directory, 'winequality-red.csv')
+    # Get the current working directory
+    current_directory = os.getcwd()
+    # Define the file path
+    file_path = os.path.join(current_directory, 'winequality-red.csv')
     
-    # # Read the CSV file into a DataFrame
-    # df = pd.read_csv(file_path, delimiter=';')
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(file_path, delimiter=';')
     
-    # # Display the DataFrame in an interactive table
-    # st.write("Wine Quality Data")
-    # st.dataframe(df)
+    # Display the DataFrame in an interactive table
+    st.write("Wine Quality Data")
+    st.dataframe(df)
 
 
 # import pandas as pd
