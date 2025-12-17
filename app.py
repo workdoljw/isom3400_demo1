@@ -28,21 +28,21 @@
 # if selected == "Contact":
 #     st.title(f"Welcome to the {selected} page.")
 
-    import streamlit as st
-    import pandas as pd
-    import os
+import streamlit as st
+import pandas as pd
+import os
     
     # Get the current working directory
-    current_directory = os.getcwd()
+current_directory = os.getcwd()
     # Define the file path
-    file_path = os.path.join(current_directory, 'winequality-red.csv')
+file_path = os.path.join(current_directory, 'winequality-red.csv')
     
     # Read the CSV file into a DataFrame
-    df = pd.read_csv(file_path, delimiter=';')
+df = pd.read_csv(file_path, delimiter=';')
     
     # Display the DataFrame in an interactive table
-    st.write("Wine Quality Data")
-    st.dataframe(df)
+st.write("Wine Quality Data")
+st.dataframe(df)
 
 
 # import pandas as pd
