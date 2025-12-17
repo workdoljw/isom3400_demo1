@@ -25,7 +25,8 @@ df = pd.DataFrame({
 
 # Display DataFrame using st.dataframe
 st.markdown("### Product Sales and Customer Data")
-st.dataframe(df)  # Interactive table with sorting and resizing
+# st.dataframe(df)  # Interactive table with sorting and resizing
+pd.DataFrame(df)
 
 # Line Chart - Sales Over Time
 st.markdown("### Sales Over Time")
